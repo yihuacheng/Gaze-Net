@@ -1,0 +1,27 @@
+---
+train:
+  params:
+    batch_size: 256
+    epoch: 60
+    lr: 0.00001
+    decay: 0.1
+    decay_step: 5000
+    loss: MSELoss
+  save:
+    save_path: "/home/cyh/GazeBenchmark/exp/Implementation/Gaze-Net"
+    model_name: GazeNet
+    step: 10
+  data:
+    image: "/home/cyh/GazeDataset20200519/EyeBased/MPIIGaze/Image"
+    label: "/home/cyh/GazeDataset20200519/EyeBased/MPIIGaze/Label"
+  pretrains: "None"
+test:
+   load:
+      begin_step: 60
+      end_step: 60
+      steps: 10
+      load_path: "/home/cyh/GazeBenchmark/exp/Implementation/Gaze-Net"
+      model_name: GazeNet
+   data:
+      image: "/home/cyh/GazeDataset20200519/EyeBased/MPIIGaze/Image"
+      label: "/home/cyh/GazeDataset20200519/EyeBased/MPIIGaze/Label"
