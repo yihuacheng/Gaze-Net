@@ -2,7 +2,7 @@
 The Pytorch Implementation of "MPIIGaze: Real-World Dataset and Deep Appearance-Based Gaze Estimation". (updated in 2021/04/28)
 
 We build benchmarks for gaze estimation in our survey [**"Appearance-based Gaze Estimation With Deep Learning: A Review and Benchmark"**](https://arxiv.org/abs/2104.12668).
-This is the implemented code of "Full-face" methods in our benchmark. Please refer our survey for more details.
+This is the implemented code of "GazeNet" method in our benchmark. Please refer our survey for more details.
 
 We recommend you to use **data processing codes** provided in <a href="http://phi-ai.org/GazeHub/" target="_blank">*GazeHub*</a>.
 You can direct run the method' code using the processed dataset.
